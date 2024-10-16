@@ -1,3 +1,0 @@
-/home/timur/Downloads/C/Github-Projects/Data-Stucture/cmake-build-debug/CMakeFiles/Data_Stucture.dir
-/home/timur/Downloads/C/Github-Projects/Data-Stucture/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/timur/Downloads/C/Github-Projects/Data-Stucture/cmake-build-debug/CMakeFiles/rebuild_cache.dir

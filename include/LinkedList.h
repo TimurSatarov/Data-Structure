@@ -16,6 +16,7 @@ typedef struct LinkedList {
 // Function prototypes
 LinkedList* createLinkedList();
 void insert(LinkedList* list, int data);
+void add(LinkedList* list, int data);
 void removeFirst(LinkedList* list);
 void print(LinkedList* list);
 void clear(LinkedList* list);

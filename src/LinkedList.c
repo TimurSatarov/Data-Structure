@@ -15,18 +15,17 @@ LinkedList* createLinkedList() {
 }
 void add(LinkedList* list, int data){
     Node *node = (Node*)malloc(sizeof(Node));
-    if(!node){
-        printf("Memory alloction failed!\n");
-        return;
-    }
-    node->data = data;
-    node->next = NULL;
-    if(list->tail == NULL){
+    node -> data = data;
+    node -> next = NULL;
+
+    if(list->head == NULL){
         list->head = node;
-        list->tail = node;
     }else{
-        list->tail->next = node;
-        list->tail = node;
+        Node* temp = list -> head;
+        while(temp->next != NULL){
+            temp = temp -> next;
+        }
+        temp->next = node;
     }
 }
 void insert(LinkedList* list, int data) {

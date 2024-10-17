@@ -6,9 +6,9 @@ SRC = src/LinkedList.c
 
 OBJ = $(SRC:.c=.o)
 
-TEST_SRC = test/test_linkedlist.c 
+TEST_SRC = test/test_linkedlist.c build/main.c 
 
-TEST_BINARY = test/test_linkedlist 
+TEST_BINARY = test/test_linkedlist build/main
 
 all: $(TEST_BINARY)
 
@@ -16,6 +16,9 @@ all: $(TEST_BINARY)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 test/%: test/%.c $(OBJ)
+	$(CC) $(CFLAGS) $^ -o $@
+
+build/%: build/%.c $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean:

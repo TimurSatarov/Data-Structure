@@ -2,13 +2,13 @@ CC = gcc
 CFLAGS = -Wall -Iinclude
 LDFLAGS = -L. 
 
-SRC = src/LinkedList.c 
+SRC = src/LinkedList.c src/Stack.c
 
 OBJ = $(SRC:.c=.o)
 
-TEST_SRC = test/test_linkedlist.c build/main.c 
+TEST_SRC = build/main.c #test/test_linkedlist.c test/test_stack.c build/main.c 
 
-TEST_BINARY = test/test_linkedlist build/main
+TEST_BINARY = build/main #test/test_linkedlist test/test_stack build/main
 
 all: $(TEST_BINARY)
 
